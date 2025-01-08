@@ -1,0 +1,48 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define e4 ios_base::sync_with_stdio(false); cin.tie(NULL)
+#define endl '\n'
+#define ll  long long
+#define test_case int tc;cin>>tc;while(tc--)
+
+
+int main() {
+
+
+		e4;
+
+		test_case{
+
+		ll n,i;
+
+		cin>>n;
+
+		string s1,s2;
+
+		cin>>s1>>s2;
+
+		ll sum=0;
+		bool ok=false;
+
+		for(i=0; i<n; i++){
+			if(s1[i]=='1' && s2[i]=='1'){
+				sum++;
+			}
+			else if(s1[i]=='1' && s2[i]=='0' || s1[i]=='0' && s2[i]=='1'){
+				sum++;
+				ok=true;
+			}
+		}
+
+		if(sum%2) cout<<"YES"<<endl;
+		else if(sum%2==0 && ok) cout<<"YES"<<endl;
+		else cout<<"NO"<<endl;
+
+	}
+
+		
+		
+}
+
+	
+		    //            S m o t h e r e d  M a t e !!		 //	
