@@ -1,0 +1,70 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define FAST_IO ios_base::sync_with_stdio(false); cin.tie(NULL)
+#define endl '\n'
+#define ll long long
+#define test_case int tc;cin>>tc;while(tc--)
+
+
+	 // const int mx=2e5+123;
+	 // long long dp[mx];	 
+
+
+int main(){
+	 
+			FAST_IO;
+
+			test_case{
+
+			int i,j,n,m,x=1,f=1,x2=1;
+
+			cin>>n>>m;
+
+			string s1,s2,s3;
+
+			for(i=0; i<m; i++){
+				if(x){
+					s1+='2';
+					
+				}
+				else{
+					s1+='3';
+					
+				}
+				x^=1;
+				if(i<m-1)s1+=' ';
+			}
+
+			for(i=0; i<m; i++){
+				if(x2){
+					s2+='3';
+					
+				}
+				else{
+					s2+='2';
+					
+				}
+				x2^=1;
+				if(i<m-1)s2+=' ';
+			}
+
+			
+
+			while(n--){
+				if(f) cout<<s1<<endl;
+				else cout<<s2<<endl;
+				f^=1;
+			}
+			
+
+			
+
+		}
+		
+
+
+
+		
+			
+
+	}
